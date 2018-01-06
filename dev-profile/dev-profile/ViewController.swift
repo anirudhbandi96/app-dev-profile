@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var profileImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        profileImg.layer.cornerRadius = 7.0
+        profileImg.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
